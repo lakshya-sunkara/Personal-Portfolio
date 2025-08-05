@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lakshya Sunkara | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+      AOS.init();
+      VanillaTilt.init(document.querySelectorAll(".tilt"), {
+        max: 15,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.3,
+      });
+    });
+  </script>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --primary-color: #38bdf8;
+      --text-color: #e2e8f0;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem;
+      font-size: 30px;
+    }
+
+    .hero {
+      background: linear-gradient(to bottom, #0f172a, #1e293b);
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--primary-color);
+    }
+
+    .tagline {
+      font-size: 1.3rem;
+      margin: 1rem 0 2rem;
+      color: #cbd5e1;
+    }
+
+    .btn {
+      background-color: var(--primary-color);
+      color: #0f172a;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 1rem auto;
+      object-fit: cover;
+      border: 4px solid var(--primary-color);
+    }
+
+    .section {
+      padding: 4rem 2rem;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: var(--primary-color);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .skill-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      padding: 1rem;
+      text-align: center;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: scale(1.05);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1e293b;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .tagline {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero" data-aos="fade-down">
+    <div class="container">
+      <img src="images/profile_picture.jpg" alt="Lakshya Sunkara" class="profile-img" />
+      <h1>Hello, I'm <span>Lakshya Sunkara</span></h1>
+      <p class="tagline">Full Stack Developer | CSE @ VIT Amaravati</p>
+      <a href="https://drive.google.com/file/d/1bYTcJjiLPJdwZJlU_7A6b1HeW1KY0qTv/view?usp=sharing" class="btn">Download Resume</a>
+    </div>
+  </header>
+
+  <section id="about" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Motivated and detail-oriented Computer Science undergraduate at VIT Amaravati with hands-on experience in full-stack development, artificial intelligence, and cloud technologies. Passionate about building scalable applications, exploring AI-powered solutions, and constantly learning modern technologies.</p>
+    </div>
+  </section>
+
+<section id="skills" class="section" data-aos="fade-up">
+  <div class="container">
+    <h2>Skills</h2>
+
+    <h3>Programming Languages</h3>
+    <div class="skills-grid">
+      <div class="skill-card tilt">Java</div>
+      <div class="skill-card tilt">Python</div>
+      
+    </div>
+
+    <h3>Web Development</h3>
+    <div class="skills-grid">
+      <div class="skill-card tilt">HTML</div>
+      <div class="skill-card tilt">CSS</div>
+      <div class="skill-card tilt">JavaScript</div>
+      <div class="skill-card tilt">React.js</div>
+      <div class="skill-card tilt">Node.js</div>
+      <div class="skill-card tilt">Express.js</div>
+      <div class="skill-card tilt">EJS</div>
+    </div>
+
+    <h3>Cloud & DevOps</h3>
+    <div class="skills-grid">
+      <div class="skill-card tilt">AWS</div>
+      <div class="skill-card tilt">Cloudinary</div>
+      <div class="skill-card tilt">Git</div>
+      <div class="skill-card tilt">GitHub</div>
+      <div class="skill-card tilt">Postman</div>
+      <div class="skill-card tilt">Render</div>
+
+    </div>
+
+    <h3>Database Skills</h3>
+<div class="skills-grid">
+  <div class="skill-card tilt">MySQL</div>
+  <div class="skill-card tilt">MongoDB</div>
+ 
+</div>
+
+
+    <h3>Core CS Concepts</h3>
+    <div class="skills-grid">
+      <div class="skill-card tilt">Data Structures & Algorithms</div>
+      <div class="skill-card tilt">Computer Networks</div>
+      <div class="skill-card tilt">DBMS</div>
+      <div class="skill-card tilt">Operating Systems</div>
+    </div>
+
+    <h3>AI & ML Technologies</h3>
+    <div class="skills-grid">
+      <div class="skill-card tilt">OpenAI GPT</div>
+      <div class="skill-card tilt">Data Analytics</div>
+      <div class="skill-card tilt">Sentiment Analysis</div>
+      <div class="skill-card tilt">Data Preprocessing Techniques</div>
+      
+    </div>
+
+     <h3>Deep Learning Models</h3>
+    <div class="skills-grid">
+      <div class="skill-card tilt">AlexNet</div>
+  <div class="skill-card tilt">VGGNet (VGG-16, VGG-19)</div>
+  <div class="skill-card tilt">GoogLeNet / Inception</div>
+  <div class="skill-card tilt">Vanilla RNN</div>
+  <div class="skill-card tilt">LSTM</div>
+  <div class="skill-card tilt">GRU</div>
+  <div class="skill-card tilt">Bi-directional RNN / LSTM / GRU</div>
+  <div class="skill-card tilt">Seq2Seq (Encoder–Decoder)</div>
+  <div class="skill-card tilt">Attention Mechanism</div>
+  <div class="skill-card tilt">YOLO (v1–v8)</div>
+  <div class="skill-card tilt">GAN (Generative Adversarial Network)</div>
+  <div class="skill-card tilt">Transformers</div>
+  <div class="skill-card tilt">BERT</div>
+  <div class="skill-card tilt">GPT</div>
+      
+    </div>
+  </div>
+</section>
+
+
+  <section id="projects" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card tilt">
+          <h3>LakshyaFiesta – Restaurant Management System</h3>
+          <p>Full-stack platform with dashboards for Owner, Chef, and Server. Features real-time order tracking, dynamic menus, analytics with Chart.js, and bill generation. Built using Node.js, Express.js, MongoDB, EJS, Cloudinary.</p>
+          <a href="https://github.com/lakshya-sunkara/restaurant-order-tracker-system">GitHub</a> | <a href="https://restaurant-order-tracker.onrender.com">Live Demo</a>
+        </div>
+        <div class="project-card tilt">
+          <h3>TrendTracker – Social Media Trend Analysis Dashboard</h3>
+          <p>Web app to track Twitter & YouTube trends with real-time sentiment analysis and topic alerts. Built using React.js, Node.js, MongoDB, APIs, JWT Auth, and Gmail SMTP for password resets.</p>
+          <a href="https://github.com/lakshya-sunkara/TrendTracker">GitHub</a> | <a href="https://trendtracker-mrz0.onrender.com">Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.Tech in Computer Science and Engineering</strong> – Vellore Institute of Technology, Amaravati (2022–2026) – GPA: 9.06</li>
+        <li><strong>Intermediate</strong> – Sri Gayatri Junior College, Vijayawada (2020–2022) – 95.5%</li>
+        <li><strong>10th Class</strong> – Kennedy E.M High School, Vijayawada (2019–2020) – 598/600</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="certifications" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Certifications</h2>
+      <ul>
+        <li>
+          <strong>MERN Full Stack Certification</strong> – Ethnus (Jul 2025) <br/>
+          <a href="https://drive.google.com/file/d/1E27AC_41sdL5KuQ9p29rqoeaOIYsSyyn/view?usp=drive_link" target="_blank">Certificate ID: 7RZZPH5L – Verify Here</a>
+          
+          <p>Score: 94/100 – Grade: A (Excellent)</p>
+          <a href="https://drive.google.com/file/d/1YMFS4AofsmC1QISe3LHcNMOEtVWkMDoO/view?usp=drive_link"target="_blank">Scorecard - Verify Here</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Phone: <a href="tel:+918185951583">+91 81859 51583</a></p>
+      <p>Email: <a href="mailto:lakshyasunkara2004@gmail.com">lakshyasunkara2004@gmail.com</a></p>
+      <p>
+        <a href="https://github.com/lakshya-sunkara/" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/sunkara-lakshya-011534351" target="_blank">LinkedIn</a> |
+        <a href="https://leetcode.com/u/V8Asf4aa5V/" target="_blank">Leetcode</a> 
+
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Lakshya Sunkara. All rights reserved.</p>
+  </footer>
+</body>
+</html>
