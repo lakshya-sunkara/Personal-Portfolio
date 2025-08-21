@@ -329,3 +329,16 @@
   padding: 1.5rem;
   box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
 }
+.languages, .from {
+  margin-top: 2rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+}
+
+.languages h3, .from h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
